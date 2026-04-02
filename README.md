@@ -48,6 +48,7 @@ terraform-az-fk-vnet-peering/
 ├── examples/
 │   ├── 01_basic_peering/
 │   ├── 02_hub_spoke_peering/
+│   ├── 03_cross_region_peering/
 │   └── README.md
 ├── inputs.tf
 ├── main.tf
@@ -122,6 +123,7 @@ module "vnet_peering" {
 |-------|-------------|
 | `01_basic_peering` | Minimal bidirectional peering between two VNets |
 | `02_hub_spoke_peering` | Hub-and-spoke layout with hub-to-spoke peerings |
+| `03_cross_region_peering` | Bidirectional peering between VNets deployed in different Azure regions |
 
 See [`examples/`](examples) for details.
 

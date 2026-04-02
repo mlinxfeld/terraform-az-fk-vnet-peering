@@ -1,0 +1,4 @@
+resource_group_name = "fk-rg"
+resource_group_location = "westeurope"
+vnet_1_location = "westeurope"
+vnet_2_location = "northeurope"

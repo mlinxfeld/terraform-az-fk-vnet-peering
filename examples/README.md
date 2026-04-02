@@ -1,7 +1,7 @@
 # Azure VNet Peering with Terraform/OpenTofu - Training Examples
 
 This directory contains progressive examples for the **terraform-az-fk-vnet-peering** module.
-The examples start from **basic two-VNet peering** and move to a practical **hub-and-spoke peering topology**.
+The examples start from **basic two-VNet peering**, expand into **cross-region connectivity**, and then move to a practical **hub-and-spoke peering topology**.
 
 These examples are part of the **[FoggyKitchen.com training ecosystem](https://foggykitchen.com/courses-2/)** and are designed to help you learn Azure networking patterns in a structured way.
 
@@ -13,9 +13,10 @@ These examples are part of the **[FoggyKitchen.com training ecosystem](https://f
 |:-------:|:------|:-----------|
 | 01 | **Basic VNet Peering** | Bidirectional peering between two VNets |
 | 02 | **Hub-and-Spoke Peering** | Central hub connected to multiple spokes |
+| 03 | **Cross-Region Peering** | Bidirectional peering between VNets in different Azure regions |
 
 Each example can be applied independently, but the recommended learning flow is:
-**01 -> 02**
+**01 -> 03 -> 02**
 
 ---
 
@@ -44,6 +45,15 @@ tofu plan
 tofu apply
 ```
 
+For the third scenario:
+
+```bash
+cd examples/03_cross_region_peering
+tofu init
+tofu plan
+tofu apply
+```
+
 When finished:
 
 ```bash
@@ -57,7 +67,7 @@ tofu destroy
 - One example = one clear networking goal
 - Minimal, practical topologies without placeholder complexity
 - Reusable patterns for real Azure environments
-- Clear progression from simple peering to hub-and-spoke design
+- Clear progression from simple peering to cross-region and hub-and-spoke design
 
 ---
 

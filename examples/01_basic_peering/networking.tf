@@ -31,7 +31,7 @@ module "vnet_2" {
 }
 
 module "peering" { 
-  source = "github.com/mlinxfeld/terraform-az-fk-vnet-peering"
+  source = "github.com/foggykitchen/terraform-az-fk-vnet-peering"
 
   resource_group_name = azurerm_resource_group.fk_rg.name
 

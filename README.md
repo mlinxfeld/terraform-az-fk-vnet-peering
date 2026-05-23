@@ -66,7 +66,7 @@ All examples are runnable and demonstrate practical peering scenarios from basic
 
 ```hcl
 module "vnet_peering" {
-  source = "github.com/mlinxfeld/terraform-az-fk-vnet-peering"
+  source = "github.com/foggykitchen/terraform-az-fk-vnet-peering"
 
   resource_group_name = "fk-rg"
 

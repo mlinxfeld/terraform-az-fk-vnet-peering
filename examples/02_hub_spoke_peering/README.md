@@ -29,6 +29,10 @@ This model is commonly used to centralize shared services (DNS, firewall, routin
 
 ---
 
+## Related Article
+
+- [Azure VNet Peering with Terraform – Why Hub-and-Spoke Is Not Transitive](https://foggykitchen.com/2026/04/02/azure-vnet-peering-terraform/)
+
 ## 🚀 Deployment Steps
 
 Initialize and apply the configuration:
